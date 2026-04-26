@@ -663,7 +663,70 @@ header {
     color: #888;
     margin-bottom: 30px;
 }
+/* Overlay */
+.custom-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
 
+/* Box */
+.alert-box {
+    background: linear-gradient(135deg, #0f0f0f, #1a001a);
+    border: 1px solid #00ffff;
+    border-radius: 20px;
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 25px #00ffff;
+    animation: popup 0.3s ease;
+}
+
+@keyframes popup {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.alert-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.alert-box h2 {
+    color: #00ffff;
+    margin-bottom: 10px;
+}
+
+.alert-box p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.alert-box button {
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
 .glass-form {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);

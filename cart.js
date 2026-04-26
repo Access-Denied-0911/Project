@@ -1,4 +1,3 @@
-// Initialize bag from localStorage
 let bag = JSON.parse(localStorage.getItem("bag")) || [];
 
 function addToBag(productId) {

@@ -1,7 +1,3 @@
-/**
- * Vora - Advanced Product Details Logic
- */
-
 function renderProductDetails() {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');

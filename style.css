@@ -621,8 +621,11 @@ header {
     background: black;
     color: white;
 }
+<<<<<<< HEAD
 
 /* Checkout Page Styling */
+=======
+>>>>>>> aaa117aa65227885131a8e80c54e3d7c2066c669
 .checkout-page {
     background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
     min-height: 100vh;

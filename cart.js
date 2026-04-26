@@ -37,5 +37,23 @@ function updateBagCount() {
     }
 }
 
+function checkBagAndProceed() {
+    bag = JSON.parse(localStorage.getItem("bag")) || [];
+
+    if (bag.length === 0) {
+        document.getElementById("custom-alert").style.display = "flex";
+        return;
+    }
+
+    window.location.href = 'checkout.html';
+}
+
+function closeAlert() {
+    document.getElementById("custom-alert").style.display = "none";
+}
+
+function goToShop() {
+    window.location.href = 'index.html';
+}
 // Initial count set
 updateBagCount();

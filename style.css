@@ -560,3 +560,126 @@ header {
     background: black;
     color: white;
 }
+.checkout-page {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.checkout-container {
+    max-width: 600px;
+    width: 100%;
+}
+
+.checkout-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.checkout-subtitle {
+    text-align: center;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.glass-form {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 0.8rem;
+    color: #ff3f6c; /* Vora Pink */
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.input-group input, .input-group textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #444;
+    padding: 12px;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #ff3f6c;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.btn-confirm-order {
+    width: 100%;
+    padding: 15px;
+    background: #ff3f6c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.2s;
+}
+
+.btn-confirm-order:hover {
+    background: #ff527b;
+    transform: scale(1.02);
+}
+
+.nav-arrows-container {
+    display: flex;
+    justify-content: space-between; /* Pushes buttons to opposite sides */
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f5f5f6;
+    position: sticky;
+    top: 0;
+    z-index: 2000; /* Ensures they stay above everything */
+}
+
+.nav-arrow-btn {
+    background: none;
+    border: none;
+    color: #282c3f;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.nav-arrow-btn:hover {
+    background-color: #f5f5f6;
+    color: #ff3f6c; /* Vora Pink hover effect */
+    transform: scale(1.1);
+}
+
+.nav-arrow-btn .material-symbols-outlined {
+    font-size: 20px;
+    font-weight: bold;
+}
